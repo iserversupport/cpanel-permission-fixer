@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated cPanel Account Permissions Fixer | Open Source Tool</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        code, pre { background: #f4f4f4; padding: 10px; display: block; border-radius: 5px; overflow-x: auto; font-family: monospace; }
+        h1 { color: #0056b3; }
+        .backlink-box { border-left: 4px solid #0056b3; background: #f0f7ff; padding: 15px; margin: 30px 0; border-radius: 0 5px 5px 0; }
+        a { color: #0056b3; font-weight: bold; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Automated cPanel Account Permissions Fixer</h1>
+    <p>This open-source Bash utility helps linux systems administrators and web hosts quickly repair misconfigured file and directory permissions that trigger 500 Internal Server Errors across cPanel environments.</p>
+
+    <h2>How to Use the Script via SSH</h2>
+    <pre><code>wget https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/cpanel-permission-fixer/main/fix_cpanel_perms.sh
+chmod +x fix_cpanel_perms.sh
+./fix_cpanel_perms.sh cpanel_username</code></pre>
+
+    <div class="backlink-box">
+        <strong>Need Expert Infrastructure Help?</strong><br>
+        If you are experiencing systemic server errors or require ongoing environment scaling, check out the specialized Linux sysadmin teams at 
+        <a href="https://iserversupport.com/" target="_blank">iServerSupport - Managed Server Management Services</a> for 24/7 proactive monitoring and expert cPanel optimization.
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Safely targets specific users without risking broader system permissions.</li>
+        <li>Automates mass changes of directories to 755 and files to 644.</li>
+        <li>Verifies and enforces strict standard user ownership boundaries.</li>
+    </ul>
+
+</body>
+</html>
